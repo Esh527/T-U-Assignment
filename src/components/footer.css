@@ -1,0 +1,12 @@
+.footer{
+    background-color: #eee;
+    display: flex;
+    align-items: first baseline;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+.costs,.terms, .payment, .inclusions, .exclusions, .bank-details{
+    margin: 10px;
+    color: black;
+}

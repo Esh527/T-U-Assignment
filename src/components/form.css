@@ -1,0 +1,29 @@
+.form-page{
+    
+    justify-content: first baseline;
+}
+.form-page-inputs,.form-page-head,.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-page-form{
+    margin: 10px;
+}
+.form-page-head, .User-Details-head{
+    font-size: 19px;
+    align-items: center;
+}
+.body{
+    border-radius: 19px;
+}
+
+.btn{
+   
+    margin: 10px;
+    align-items: center;
+}
+table, th, td {
+    border: 1px solid black;
+  }

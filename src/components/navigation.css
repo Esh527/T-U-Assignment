@@ -1,0 +1,20 @@
+.navigation{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-self: end;
+   list-style: none;
+    padding: 10px;
+}
+
+.navigation-list{
+    display: flex;
+    flex-direction: row;
+   
+   list-style: none;
+    padding: 10px;
+}
+.navigation-list1, .navigation-list2, .navigation-list3, .navigation-list4{
+    margin: 5px;
+}
