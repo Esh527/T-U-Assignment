@@ -1,9 +1,10 @@
 import React from 'react';
 import Modal from 'react-modal';
+import './popup.css'
 
 const PopupComponent = ({ isOpen, onClose }) => {
   return (
-    <Modal
+    <Modal 
       isOpen={isOpen}
       onRequestClose={onClose}
       contentLabel="Popup Modal"
@@ -11,7 +12,7 @@ const PopupComponent = ({ isOpen, onClose }) => {
     >
       <div className="popup-content">
         <h2>November is one of the Best times to visit Kenya</h2>
-        <p>
+        <p className="popup-content-p">
           November is one of the Best times to visit Kenya, especially to visit its prime park,
           Maasai Mara. This is because the large migratory herds would have returned to Tanzania and
           now the Big cats have to venture long distances to hunt their prey.
@@ -27,7 +28,7 @@ const PopupComponent = ({ isOpen, onClose }) => {
           <br />
           Join us on this unforgettable journey of your lifetime.
         </p>
-        <button onClick={onClose}>Close</button>
+        <button className="popup-content btn" onClick={onClose}>Close</button>
       </div>
     </Modal>
   );

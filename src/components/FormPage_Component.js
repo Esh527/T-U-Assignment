@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
-import './form.css';
+
 import { Link, Element } from 'react-scroll';
+import BookingSectionComponent from './Booking_Section_Component';
+
+import './form.css';
+
+
 const FormPageComponent = () => {
+  const [showFormModal, setShowFormModal] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     address: '',
@@ -49,7 +55,7 @@ const FormPageComponent = () => {
     });
   };
 
-  // Save users data to local storage when the component mounts
+  
   React.useEffect(() => {
     const storedUsers = JSON.parse(localStorage.getItem('users'));
     if (storedUsers) {
@@ -57,11 +63,14 @@ const FormPageComponent = () => {
     }
   }, []);
 
-  // Save users data to local storage whenever the users state changes
+
   React.useEffect(() => {
     localStorage.setItem('users', JSON.stringify(users));
   }, [users]);
 
+  const toggleFormModal = () => {
+    setShowFormModal(!showFormModal);
+  };
   return (
     <div className = "form-page">
       <h2  className = "form-page-head">User Details Form</h2>
@@ -150,7 +159,7 @@ const FormPageComponent = () => {
             <th>BankCountry</th>
             <th>PinCode</th>
 
-            {/* Add other table headers here */}
+            
           </tr>
         </thead>
         <tbody className="body">

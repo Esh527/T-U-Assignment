@@ -2,6 +2,7 @@ import React from 'react';
 import { Chrono } from 'react-chrono';
 import moment from 'moment';
 import './timeline.css';
+import FooterComponent from './Footer_Component';
 
 const TimelineComponent = () => {
   const events = [
@@ -137,6 +138,7 @@ const TimelineComponent = () => {
     <div className="timeline-component">
       <h2 className="timeline-head">Itinerary Timeline</h2>
       <Chrono items={events} mode="VERTICAL" slideShow hideControls />
+      <FooterComponent/>
     </div>
   );
 };
